@@ -14,7 +14,26 @@
   --color-accent-light-purple: rgba(108, 142, 255, 0.4);
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #3b82f6, #4f46e5, #9333ea, #ff00ff);
+  background-size: 300% 300%;
+  animation: gradientAnimation 8s ease-in-out infinite;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: all 0.3s ease;
+}
 
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
