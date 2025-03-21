@@ -5,7 +5,7 @@ import './App.css';
 
 function App() {
   return (
-      <div className="bg-gradient-to-b from-blue-500 to-indigo-700 min-h-screen">
+      <div>
         <Routes>
           <Route path='/' element={<HomePage />}/>
           <Route path='/surah/:surahId' element={<DetailSurahPage />} />
