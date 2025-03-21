@@ -84,7 +84,7 @@ function DetailSurahContainer() {
   };
 
   if (loading) {
-    return <div className="p-5 text-center">Memuat...</div>;
+    return <div className="p-5 text-center text-amber-50">Memuat...</div>;
   }
 
   if (error || !surah) {
